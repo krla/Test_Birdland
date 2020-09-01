@@ -37,6 +37,13 @@
     },
     "testMatch": [
       "**/__tests__/*.(ts|tsx|js)"
-    ]
+    ],
+    "verbose": true
+  },
+  "devDependencies": {
+    "jest-cli": "^26.4.2"
+  },
+  "scripts":{
+    "test": "jest"
   }
 }
