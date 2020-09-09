@@ -16,12 +16,12 @@ export function createNode(value: string) : Node {
 
 // create a new linked list
 export function createLinkedList(value: string) : LinkedList {
-  
+  return { head: { value, next: null } }
 }
 
 // insert a new node after a node in a linked list
 export function insertAfter(node: Node, value: string) : Node {
-  
+  return { value, next: node }
 }
 
 // insert after tail
@@ -35,7 +35,7 @@ export function length(linkedList: LinkedList) : number {
     return 0;
   };
   let len = 0;
-  let iterator = linkedList.head;
+  let iterator = linkedList.head.next;
   while(iterator) {
     len = len + 1;
     iterator = iterator.next;
@@ -44,11 +44,11 @@ export function length(linkedList: LinkedList) : number {
 }
 
 export function tail(linkedList: LinkedList) : Node {
- 
+  
 }
 
 export function findNode(linkedList: LinkedList, value: string) : Node {
-  
+
 }
 
 export function removeAfter(linkedList: LinkedList, node: Node): Node {
